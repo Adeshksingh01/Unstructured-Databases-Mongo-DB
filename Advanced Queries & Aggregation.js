@@ -37,7 +37,7 @@
             
 
 \\Q.9 Write a query to add a new field graduated set to false for all students who are in the Mathematics department.
-**Query:- db.students.updateMany({"grades.math":{$exists:true}},{$set:{"graduated":false}})
+**Query:- db.students.updateMany({department:"Mathematics"},{$set:{"graduated":false}})
                    
 
 \\Q.10 How can you retrieve only the name and department fields for all students, excluding the _id field?
